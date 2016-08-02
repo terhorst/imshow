@@ -9,25 +9,27 @@ Usage
     $ python -e 'import numpy; numpy.savetxt("array.txt", numpy.random.normal(size=(60, 60)))'
     $ imshow array.txt
 
-produces a PNG image ``array.png`` of a random square matrix with 60 entries per side.
+produces the file ``array.png`` containing an image of a random square
+matrix with 60 entries per side.
 
 .. figure:: examples/array.png
 
     Example of default output.
 
-The default output name ``array.png`` can be overridden by specifying a second argument.
-The extension of the output file name controls the output format.
+The default output name ``array.png`` can be overridden by specifying
+a second argument. The extension of the output file name controls the
+output format.
 
 .. code:: bash
 
-    $ python -e 'import numpy; numpy.savetxt("array.txt", numpy.random.normal(size=(60, 60)))'
     $ imshow array.txt array.jpg
 
 .. figure:: examples/array.jpg
 
     The same array in JPEG format.
 
-Several options, detailed in ``imshow -h``, control the appearance of the plot.
+Several options, detailed in ``imshow -h``, control the appearance of
+the plot.
 
 .. code:: bash
 
