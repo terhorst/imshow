@@ -1,0 +1,6 @@
+__pycache__
+*.swp
+imshow.egg-info
+build/
+dist/
+*.pyc
