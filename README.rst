@@ -16,6 +16,9 @@ matrix with 60 entries per side.
 
     Example of default output.
 
+The input file ``array.txt`` should readable by ``numpy.loadtxt()``, i.e. 
+be a space-delimited square matrix.
+
 The default output name ``array.png`` can be overridden by specifying
 a second argument. The extension of the output file name controls the
 output format.
