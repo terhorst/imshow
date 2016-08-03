@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <p><code>imshow</code> is a command-line utility for visualizing matrices. It is essentially a wrapper for the <code>matplotlib</code> / MATLAB command of the same name.</p>
+    <section id="usage">
+        <h1>Usage</h1>
+        <pre data-language="bash"><span class="nv">$ </span>python -e <span class="s1">&#39;import numpy; numpy.savetxt(&quot;array.txt&quot;, numpy.random.normal(size=(60, 60)))&#39;</span>
+<span class="nv">$ </span>imshow array.txt</pre>
+        <p>produces the file <code>array.png</code> containing an image of a random square matrix with 60 entries per side.</p>
+        <figure>
+            <img src="examples/array.png" />
+            <figcaption>Example of default output.</figcaption>
+        </figure>
+        <p>The input file <code>array.txt</code> should readable by <code>numpy.loadtxt()</code>, i.e. be a space-delimited square matrix.</p>
+        <p>The default output name <code>array.png</code> can be overridden by specifying a second argument. The extension of the output file name controls the output format.</p>
+        <pre data-language="bash"><span class="nv">$ </span>imshow array.txt array.jpg</pre>
+        <figure>
+            <img src="examples/array.jpg" />
+            <figcaption>The same array in JPEG format.</figcaption>
+        </figure>
+        <p>Several options, detailed in <code>imshow -h</code>, control the appearance of the plot.</p>
+        <pre data-language="bash"><span class="nv">$ </span>imshow -g -b array.txt array.2.png</pre>
+        <figure>
+            <img src="examples/array.2.png" />
+            <figcaption>The same array, with a grid and colormap added.</figcaption>
+        </figure>
+    </section>
+    <section id="requirements">
+        <h1>Requirements</h1>
+        <p>Numpy and <code>matplotlib</code>.</p>
+    </section>
+    <section id="author">
+        <h1>Author</h1>
+        <p>Jonathan Terhorst &lt;<a href="mailto:terhorst@gmail.com">terhorst@gmail.com</a>&gt;</p>
+    </section>
+</body>
+</html>
