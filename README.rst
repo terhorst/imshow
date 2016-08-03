@@ -12,7 +12,7 @@ Usage
 produces the file ``array.png`` containing an image of a random square
 matrix with 60 entries per side.
 
-.. figure:: examples/array.png
+.. figure:: https://terhorst.github.io/imshow/examples/array.png
 
     Example of default output.
 
@@ -27,7 +27,7 @@ output format.
 
     $ imshow array.txt array.jpg
 
-.. figure:: examples/array.jpg
+.. figure:: https://terhorst.github.io/imshow/examples/array.jpg
 
     The same array in JPEG format.
 
@@ -38,7 +38,7 @@ the plot.
 
     $ imshow -g -b array.txt array.2.png
 
-.. figure:: examples/array.2.png
+.. figure:: https://terhorst.github.io/imshow/examples/array.2.png
 
     The same array, with a grid and colormap added.
 
